@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 * {
 	box-sizing: border-box;
@@ -76,19 +77,30 @@ main {
 .about-info {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+	grid-template-areas: 'nested bio bio' 'job1 job2 job3';
 	grid-template-columns: repeat(3, 1fr);
 
-	.bio-image {
-		grid-area: bioimage;
-		margin: auto;
-		border-radius: 15px;
-		border: $secondary-color 3px solid;
+	.nested {
+		grid-area: nested;
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: 1fr;
+
+		.bio-image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				border-radius: 15px;
+				border: $secondary-color 3px solid;
+			}
+		}
 	}
 
 	.bio {
 		grid-area: bio;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
+		line-height: 3rem;
 	}
 
 	.job-1 {
@@ -114,6 +126,20 @@ main {
 			padding-bottom: 3px;
 		}
 
+		h4 {
+			text-align: center;
+			font-weight: 500;
+			padding: none;
+
+			&#uni-name {
+				text-transform: uppercase;
+			}
+
+			&#uni-degree {
+				text-decoration: ital;
+			}
+		}
+
 		ul {
 			list-style: none;
 			margin: 0;
@@ -122,6 +148,14 @@ main {
 			li {
 				text-align: center;
 			}
+		}
+	}
+
+	.about-icons {
+		text-decoration: none;
+
+		i {
+			padding-right: 5px;
 		}
 	}
 }
