@@ -78,4 +78,16 @@
 	.projects {
 		grid-template-columns: 1fr;
 	}
+
+	.about-info {
+		grid-template-areas: 'bioimage' 'nested' 'bio' 'job1' 'job2' 'job3';
+		grid-template-columns: 1fr;
+	}
+
+	// .portrait {
+	// 	background: url('../img/portrait.jpg');
+	// 	background-position: 45% 35%;
+	// 	width: 150px;
+	// 	height: 150px;
+	// }
 }
