@@ -1,137 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="dist/css/main.css"> -->
-  <link rel="stylesheet" href="css/main.css">
-  <title>Services</title>
-</head>
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="dist/css/main.css"> -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>Services</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
 
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-          Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-          About Me</a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-          My Work</a>
-        </li>
-        <li class="nav-item current">
-          <a href="services.html" class="nav-link">
-          Services</a>
-        </li>
-        <!-- <li class="nav-item">
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link"> My Work</a>
+          </li>
+          <li class="nav-item current">
+            <a href="services.html" class="nav-link"> Services</a>
+          </li>
+          <!-- <li class="nav-item">
           <a href="contact.html" class="nav-link">
           How To Reach Me</a>
         </li> -->
-      </ul>
-    </nav>
+        </ul>
+      </nav>
+    </header>
 
-  </header>
-  
-  <main id="about">
-    <h1 class="lg-heading">
-      Services<span class="text-secondary"></span>
-    </h1>
-    <h2 class="sm-heading">
+    <main id="about">
+      <h1 class="lg-heading">Services<span class="text-secondary"></span></h1>
+
+      <!-- <h2 class="sm-heading">
       Here's What I Can Do . . .
-    </h2>
+    </h2> -->
 
-    <div class="about-info">
+      <div class="about-info">
+        <div class="job job-1">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-desktop"></i></span>Web
+            Development
+          </h3>
 
-      <div class="job job-1">   
-        <h3>
+          <ul>
+            <li>Responsive Web Design (Mobile First)</li>
+            <li>Accessibile for All Users</li>
+            <li>Built with Modern Technologies</li>
+          </ul>
+
+          <!-- <h3>
           <span class="about-icons"><i class="fas fa-desktop"></i></span>Software Development - Web, Desktop, Bots (Slack, Discord, Tinder, Bumble). RWD/Accessibility
-        </h3>
+        </h3> -->
+        </div>
 
+        <div class="job job-2">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-file-code"></i></span>SEO
+            - Page Insights/Optimization
+          </h3>
+          <ul>
+            <li>Minimization of All Assets & Files</li>
+            <li>
+              Implementation of Various Techniques (Lazy Loading, Asynchrouns
+              JS, Creating/Destroying Accordingly)
+            </li>
+            <li>Structuring CSS/JS Accordingly for Performance Optimization</li>
+          </ul>
+        </div>
+
+        <div class="job job-3">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-desktop"></i></span>Error
+            Fixing & Bug Handling
+          </h3>
+          <ul>
+            <li>JavaScript Debugging</li>
+            <li>Custom Functionality</li>
+            <li>Integration of 3<sup>rd</sup> Party APIs</li>
+          </ul>
+          <!-- <h3>
+            <span class="about-icons"><i class="fas fa-file-code"></i></span>SEO
+            - Page Insights/Optimization
+          </h3> -->
+        </div>
       </div>
 
-      <div class="job job-2">
-        <h3>
-          <span class="about-icons"><i class="fas fa-server"></i></span>Mobile App Development (React Native)
-        </h3>
+      <div class="about-info">
+        <div class="job job-1">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-file-code"></i></span
+            >Shopify Development (Liquid)
+          </h3>
+          <ul>
+            <li>Theme Customizations</li>
+            <li>Custom Page Interactivity/Functionality</li>
+            <li>Custom Widget Additions</li>
+            <li>And Much More..</li>
+          </ul>
+        </div>
 
-      </div>
+        <div class="job job-2">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-server"></i></span
+            >Marketing
+          </h3>
+          <ul>
+            <li>Social Media Ads (Facebook, Google, TikTok, Instagram)</li>
+            <li>Influencer Marketing</li>
+            <li>Retargeting Campaigns</li>
+            <li>Upselling Techniques</li>
+          </ul>
+        </div>
 
-      <div class="job job-3">
-        <h3>
-          <span class="about-icons"><i class="fas fa-file-code"></i></span>Shopify Theme/App Development (Liquid)
-        </h3>
- 
-      </div>
-
-      
-
-
-    </div>
-
-    <div class="about-info">
-
-        <div class="job job-1">   
-          <h3>
-            <span class="about-icons"><i class="fas fa-desktop"></i></span>UI/UX Design (Figma)
+        <div class="job job-3">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-desktop"></i></span>UI/UX
+            Design (Figma)
           </h3>
         </div>
-  
+      </div>
+
+      <div class="about-info">
+        <div class="job job-1">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-server"></i></span
+            >Mathematics Tutoring
+          </h3>
+          <div style="display: flex">
+            <ul style="width: 50%">
+              <li>Algebra 1 & 2</li>
+              <li>Geometry</li>
+              <li>Pre-Calculus</li>
+              <li>Calculus 1, 2 and 3</li>
+              <li>Linear Algebra</li>
+            </ul>
+
+            <ul style="width: 50%">
+              <li>Differential Equations</li>
+              <li>Discrete Mathematics</li>
+              <li>Probability Theory</li>
+              <li>Mathematical Statistics</li>
+              <li>Financial Mathematics (Finance)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job job-2">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-server"></i></span
+            >Computer Programming Tutoring
+          </h3>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+
+        <div class="job job-3" style="cursor: pointer;">
+          <h3 class="service">
+            <span class="about-icons"><i class="fas fa-file-code"></i></span
+            >Exam Preparation Coaching
+          </h3>
+          <!-- <div style="display: flex">
+            <ul style="width: 50%">
+              <li>AP Statistics Exam</li>
+              <li>AP Calculus AB & BC Exams</li>
+              <li>SAT Math Subject Test I & II</li>
+              <li>GRE Math Subject Test</li>
+            </ul>
+
+            <ul style="width: 50%">
+              <li>SAT & ACT (Math)</li>
+              <li>GMAT (Math)</li>
+              <li>GRE (Math)</li>
+              <li>GED (Math)</li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- <div class="about-info">
+        <div class="job job-1">
+          <h3>
+            <span class="about-icons"><i class="fas fa-server"></i></span>Mobile
+            App Development (React Native)
+          </h3>
+        </div>
+
         <div class="job job-2">
           <h3>
-            <span class="about-icons"><i class="fas fa-server"></i></span>Marketing - Google Ads, Facebook Ads, Instagram Ads
+            <span class="about-icons"><i class="fas fa-server"></i></span
+            >Artificial Intelligence
           </h3>
         </div>
-  
-        <div class="job job-3">
-          <h3>
-            <span class="about-icons"><i class="fas fa-file-code"></i></span>SEO - Page Insights/Optimization
-          </h3>
-        </div>
-      </div>
 
-    <div class="about-info">
-
-        <div class="job job-1">   
-          <h3>
-            <span class="about-icons"><i class="fas fa-desktop"></i></span>Error Fixing & Bug Handling
-          </h3>
-        </div>
-  
         <div class="job job-2">
           <h3>
-            <span class="about-icons"><i class="fas fa-server"></i></span>Artificial Intelligence & Data Science
+            <span class="about-icons"><i class="fas fa-server"></i></span
+            >Statistics Tutoring
           </h3>
         </div>
-  
+
         <div class="job job-3">
           <h3>
-            <span class="about-icons"><i class="fas fa-file-code"></i></span>SEO - Page Insights/Optimization
+            <span class="about-icons"><i class="fas fa-file-code"></i></span
+            >Data Science
           </h3>
         </div>
-      </div>
+      </div> -->
+    </main>
 
-  </main>
+    <footer id="main-footer">&copy; Victor Vargas 2021</footer>
 
-  <footer id="main-footer">
-    &copy; Victor Vargas 2021
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+  </body>
 </html>
+
