@@ -21,6 +21,8 @@ filterProjects = (keyword) => {
   items.forEach((item) => {
     item.style.display = item.classList.contains(keyword) ? 'block' : 'none';
   });
+
+  // if all empty - give message a display of block, hide otherwise
 };
 
 // Add a fade out and fade in effect
