@@ -1,7 +1,6 @@
-console.log('connected');
-
 const categories = document.querySelectorAll('.categories')[0];
 const items = document.querySelectorAll('.item');
+const noResultsDiv = document.getElementById('noResults');
 let activeBtn = null;
 
 categories.addEventListener('click', (e) => {
@@ -18,14 +17,22 @@ categories.addEventListener('click', (e) => {
 });
 
 filterProjects = (keyword) => {
-  items.forEach((item) => {
-    item.style.display = item.classList.contains(keyword) ? 'block' : 'none';
-  });
+  let count = 0;
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].classList.contains(keyword)) {
+      items[i].style.display = 'block';
+      count += 1;
+    } else {
+      items[i].style.display = 'none';
+    }
 
-  // if all empty - give message a display of block, hide otherwise
+    if (!count) {
+      noResultsDiv.style.display = 'block';
+    } else {
+      noResultsDiv.style.display = 'none';
+    }
+  }
 };
 
-// Add a fade out and fade in effect
-// Style the buttons - add margin and pretty colors
-// Double check the tags
-// add active and in active styles for btns
+// Add a slide in/slide out effect
+// Double check the HTML tags

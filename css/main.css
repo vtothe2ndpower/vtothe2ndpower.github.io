@@ -234,6 +234,41 @@ main#home h1 {
   text-align: center;
 }
 
+.categories {
+  margin: 1.25rem 0;
+}
+
+.categories select {
+  padding: 5px 0 5px 5px;
+  width: 12.5%;
+  background: #c4c4c4;
+  color: black;
+  font-style: inherit;
+  font-weight: bold;
+  border: 1px black solid;
+  border-radius: 5px;
+  opacity: 0.95;
+}
+
+.categories select:hover,
+.categories select:active {
+  cursor: pointer;
+}
+
+.active {
+  background: #c4c4c4;
+  color: #000;
+  opacity: 0.9;
+}
+
+#noResults {
+  display: none;
+}
+
+#noResults p {
+  font-size: 1.75rem;
+}
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -241,6 +276,10 @@ main#home h1 {
 }
 .projects img {
   width: 100%;
+  height: 75%;
+  background: #000;
+  object-fit: contain;
+  margin: auto;
   border: 3px #fff solid;
 }
 .projects img:hover {
@@ -269,39 +308,6 @@ main#home h1 {
 }
 .boxes div:hover span {
   color: #000;
-}
-
-.categories-btn {
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
-  padding: 0.5rem 0.5rem;
-  border: none;
-  border-radius: 10px;
-  background: #c4c4c4;
-  color: #000;
-  opacity: 1;
-}
-
-.categories-btn:hover {
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
-  padding: 0.5rem 0.5rem;
-  /* border: none; */
-  border-radius: 10px;
-  background: #4a7c99;
-  color: #000;
-}
-
-.active {
-  /* background: #000;
-  color: #fff; */
-  background: #c4c4c4;
-  color: #000;
-  opacity: 0.5;
-}
-
-.categories-btn:hover {
-  cursor: pointer;
 }
 
 .btn,
@@ -399,5 +405,13 @@ main#home h1 {
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .categories select {
+    width: 100%;
+  }
+
+  .item {
+    margin: 1.25rem auto;
   }
 }
